@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    gap : 10px;
+    align-items: center;
+    margin : 10px;
+}
+
+input[type="checkbox"] , input[type="radio"]{
+    display: none;
+}
+
+input[type="color"]{
+    visibility: hidden;
+}
+
+form div{
+    display: flex;
+    align-items: center;
+    gap : 10px;
+}
+
+input:checked + label{
+    background-color: #d3e2fd;
+
+}
+input + label{
+    padding: 4px;
+    border-radius: 2px;
+}
+.header{
+    display: flex;
+}
+
+
+.header .cell{
+     min-width : 150px; 
+    border : 1px solid gray; 
+    text-align: center;
+     padding: 5px 10px;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+.container{
+    border: 1px solid black;
+    height: 80vh;
+    overflow: scroll;
+}
+.sno-container{
+    text-align: center;
+}
+.sno-container>div{
+    border : 1px solid gray;
+    height: 1.5rem;
+}
+.rows-container>div>div{
+    border: 1px solid gray;
+    min-width: 150px;
+    min-height: 1.5rem;
+}
+.cell {
+    display: inline-block;
+    overflow: hidden;
+}
+.rows-container>div{
+    display: flex;
+}
+.rows-container{
+    display: flex;
+    flex-direction: column;
+}
+.cell:focus{
+    outline: 2px solid blue;
+    height: auto;
+}
