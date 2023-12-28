@@ -34,8 +34,25 @@ input + label{
     padding: 4px;
     border-radius: 2px;
 }
+
+.row2{
+    display: flex;
+    justify-content: center;
+    margin : 10px;
+}
+.row2>input{
+    width : 50vw;
+}
+.row2>div{
+    margin-right: 20px;
+}
 .header{
     display: flex;
+    width : fit-content;
+    position: sticky;
+    top : 0;
+    background-color: white;
+    z-index: 100;
 }
 
 
@@ -49,7 +66,9 @@ input + label{
 .body{
     display: grid;
     grid-template-columns: 50px auto;
+    width :fit-content;
 }
+
 .container{
     border: 1px solid black;
     height: 80vh;
@@ -57,6 +76,9 @@ input + label{
 }
 .sno-container{
     text-align: center;
+    position: sticky;
+    left : 0;
+    background-color: white;
 }
 .sno-container>div{
     border : 1px solid gray;
