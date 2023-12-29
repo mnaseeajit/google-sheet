@@ -71,7 +71,7 @@ input + label{
 
 .container{
     border: 1px solid black;
-    height: 80vh;
+    /* height: 80vh; */
     overflow: scroll;
 }
 .sno-container{
@@ -103,4 +103,29 @@ input + label{
 .cell:focus{
     outline: 2px solid blue;
     height: auto;
+}
+
+.foot-form{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    align-items: center;
+    padding: 0px 50px;
+    padding-bottom: 20px;
+}
+#root{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr 10fr 1fr;
+    height: 100vh;
+    width : 100vw;
+    overflow-y: hidden;
+}
+.foot-form input:checked + label{
+    background-color: green;
+    color : white;
+}
+.foot-form>button{
+    width : 20px;
+    height : 20px;
 }

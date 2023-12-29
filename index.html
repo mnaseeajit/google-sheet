@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <section>
+    <div id="root">
+      <section>
+        <div>
+            <button id="upload">upload</button>
+            <button id="download">download</button>
+        </div>
         <form id="form">
             <select name="font-family">
                 <option value="Arial, sans-serif">Arial</option>
@@ -55,18 +60,28 @@
          
           <div class="row2">
              <div class="selected-cell">NA</div>
-             <label for="input">f(x)</label>
-              <input type="text" id="input" name="input">
+             <label for="fx">f(x)</label>
+              <input type="text" id="fx" name="input">
          </div>     
-    </section>
-    <section class="container">
+      </section>
+       <section class="container">
          <section class="header"></section>
          <section class="body">
             <div class="sno-container"></div>
             <div class="rows-container"></div>
          </section>
-    </section>
-
+       </section>
+       <section id="foot">
+         <form class="foot-form">
+            <button type="button" class="material-icon">+</button>
+            <div>
+                <input type="radio" name="sheet" id="sheet1" checked>
+                <label for="sheet1">sheet1</label>
+            </div>
+         </form>
+      </section>
+    </div>
+    
     <script src="./data-flow.js"></script>
     <script src="./script.js"></script>
 </body>
